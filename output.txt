@@ -1,0 +1,23 @@
+./client
+$ ./client
+Connected to the server
+Enter a message (type 'quit' to exit): ls
+Received data from server (45 bytes): 'client
+client.c
+files
+output
+server
+server.c
+'
+Connection closed by the server. Exiting...
+
+./server
+$ ./server
+Server is listening on local socket /tmp/local_socket...
+Connection accepted from client
+Received data from client: ls
+Received ls command. Executing...
+Connection accepted from client
+Received data from client: test.txt
+Attempting to open file: ./files/test.txt
+
